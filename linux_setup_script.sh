@@ -35,7 +35,8 @@ echo "Banner /etc/ssh/banner" >> /etc/ssh/sshd_config
 mkdir /home/admin/.ssh
 chown admin:admin /home/admin/.ssh
 
-vim /home/admin/.ssh/authorized_keys
+echo "# add your public ssh key(s) here for the admin user" > /home/admin/.ssh/authorized_keys
+nano /home/admin/.ssh/authorized_keys
 chown admin:admin /home/admin/.ssh/authorized_keys
 
 
