@@ -1,6 +1,8 @@
 ######################################
 # smg mobile gett rektt init linux script
 
+# note: this expects to be on ubuntu
+
 apt update
 apt upgrade -y
 
