@@ -23,6 +23,9 @@ sed --in-place=_bak 's/PermitRootLogin\ yes/PermitRootLogin\ no/g' /etc/ssh/sshd
 # turn off password auth
 sed --in-place=_bak 's/PasswordAuthentication\ yes/PasswordAuthentication\ no/g' /etc/ssh/sshd_config
 
+# default SSH port to 22 if not set
+if [ -z "$SSH_PORT" ]; then SSH_PORT=22 ; else echo "SSH_PORT=$SSH_PORT"; fi
+
 # change port
 echo "Port $SSH_PORT" >> /etc/ssh/sshd_config
 
