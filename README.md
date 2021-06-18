@@ -18,7 +18,8 @@ This script expects to be on **Ubuntu** and that you are the **root user** and h
 
 # Run
 ```bash
-# curl https://raw.githubusercontent.com/zacharytyhacz/smg-linux-setup-script/master/linux_setup_script.sh > setup.sh
-# chmod +x setup.sh
-# SSH_PORT=123456 setup.sh
+# as root user...
+curl https://raw.githubusercontent.com/zacharytyhacz/smg-linux-setup-script/master/linux_setup_script.sh > setup.sh
+chmod +x setup.sh
+SSH_PORT=123456 setup.sh
 ```
